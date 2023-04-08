@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Poppins:ital,wght@0,500;0,700;1,500;1,600&display=swap");
+
+* {
+  font-family: "Barlow", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --red: #ff7979;
+  --violet: #5e54a4;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--red);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  width: 100%;
+  height: 100%;
+}
+
+.infos {
+  max-width: 525px;
+}
+
+.infos h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 55px;
+  letter-spacing: -0.52px;
+  color: white;
+}
+
+.infos p {
+  margin-top: 11px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: white;
+}
+
+.form-section {
+  width: 540px;
+}
+
+.discription {
+  width: 100%;
+  height: 60px;
+  background-color: var(--violet);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.27px;
+  color: white;
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+}
+
+form {
+  margin-top: 24px;
+  width: 100%;
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+}
+
+.input-box > img {
+  height: 30px;
+  width: 3 0px;
+}
+
+.input-box {
+  width: 100%;
+  height: 56px;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 32px;
+}
+
+.input-box input {
+  border: none;
+  outline: none;
+}
+
+.input-box img {
+  display: none;
+}
+
+.errorbox {
+  width: 100%;
+  height: 17px;
+  margin-top: 6px;
+  margin-bottom: 19px;
+}
+
+.error {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: right;
+  color: var(--red);
+}
+
+.submit-btn {
+  width: 100%;
+  height: 56px;
+  border: none;
+  cursor: pointer;
+  background: #5e54a4;
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  color: white;
+}
