@@ -20,7 +20,6 @@ function nameValidation(name) {
         errors[0].textContent = 'First Name cannot be empty';
         errorIcons[0].style.display = "block"
         return false; 
-        // ამას რატო ვინახავთ?
     }
     return true; 
 }
@@ -38,14 +37,16 @@ function lastNameValidation(surname){
 function emailValidation(email){
     if(email===''){
         inputBoxes[2].style.borderColor = '#ff7979'
-        errors[2].textContent ='e-mail cannot be empty';
+        errors[2].textContent ='email cannot be empty';
         errorIcons[2].style.display = "block"
-    if(!email.includes('@') || !email.includes("."))
+        return false
+    };
+    if(!email.includes('@') || !email.includes(".")){
         inputBoxes[2].style.borderColor = '#ff7979'
         errors[2].textContent ='Looks like this is not an e-mail';
         errorIcons[2].style.display = "block"
         return false;
-}
+    }
     return true;
 }
 
@@ -60,8 +61,25 @@ function passwordValidation(password){
 }
 
 const removeErrors = (index) => {
-    console.log(index)
-    inputBoxes[index].style.borderColor ='#dedede';
+    inputBoxes[index].style.borderColor ='#5E54A4';
     errors[index].textContent = "";
     errorIcons[index].style.display = "none";
 }
+
+const setBlueBorder = (index, input) => {
+    let inputIsValid;
+    if (index === 0) {
+        inputIsValid = nameValidation(input.value.trim());
+    } else if (index === 1) {
+        inputIsValid = lastNameValidation(input.value.trim())
+    }else if (index === 2) {
+        inputIsValid = emailValidation(input.value.trim())
+    }else {
+        inputIsValid = passwordValidation(input.value)
+    }
+    if(inputIsValid){
+        inputBoxes[index].style.borderColor = '#dedede'
+    }else {
+        inputBoxes[index].style.borderColor ='#ff7979';
+  }
+};
