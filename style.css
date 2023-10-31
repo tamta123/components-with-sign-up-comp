@@ -84,6 +84,7 @@ main {
   color: white;
   box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
   padding: 18px 67px;
+  gap: 5px;
 }
 .not-bold {
   color: #fff;
@@ -162,6 +163,14 @@ form {
   color: white;
 }
 
+.about-button-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+
 .about-button {
   color: #bab7d4;
   text-align: center;
@@ -170,7 +179,15 @@ form {
   font-style: normal;
   font-weight: 500;
   line-height: 26px;
-  margin-top: 8px;
+}
+
+.terms {
+  color: #ff7979;
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
 }
 
 @media screen and (min-width: 768px) {
@@ -306,5 +323,13 @@ form {
     line-height: 26px;
     letter-spacing: 1px;
     color: white;
+  }
+
+  .about-button-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
   }
 }

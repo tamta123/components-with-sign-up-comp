@@ -7,8 +7,6 @@ const submitFc = (event, form) => {
   const nameIsValid = nameValidation(form.name.value.trim());
   const surnameIsValid = lastNameValidation(form.surname.value.trim());
   const emailIsValid = emailValidation(form.email.value.trim());
-  // const telephoneIsValid = telephoneValidation(form.telephone.value);
-  // const dobIsValid = dobValidation(form.dob.value);
   const passwordIsValid = passwordValidation(form.password.value);
 
   if (nameIsValid && surnameIsValid && emailIsValid && passwordIsValid) {
@@ -51,36 +49,6 @@ function emailValidation(email) {
   }
   return true;
 }
-
-// function telephoneValidation(telephone) {
-//   if (telephone === "") {
-//     inputBoxes[3].style.borderColor = "#ff7979";
-//     errors[3].textContent = "Telephone number cannot be empty";
-//     errorIcons[3].style.display = "block";
-//     return false;
-//   } else if (!/^[0-9]{10,}$/.test(telephoneNumber)) {
-//     inputBoxes[6].style.borderColor = "#ff7979";
-//     errors[6].textContent = "Please enter valid telephone number";
-//     errorIcons[6].style.display = "block";
-//     return false;
-//   }
-//   return true;
-// }
-
-// function dobValidation(dob) {
-//   if (dob === "") {
-//     inputBoxes[4].style.borderColor = "#ff7979";
-//     errors[4].textContent = "Date of birth cannot be empty";
-//     errorIcons[4].style.display = "block";
-//     return false;
-//   } else if (new Date(dob) > new Date()) {
-//     inputBoxes[4].style.borderColor = "#ff7979";
-//     errors[4].textContent = "Please enter valid date of birth";
-//     errorIcons[4].style.display = "block";
-//     return false;
-//   }
-//   return true;
-// }
 
 function passwordValidation(string) {
   if (string === "") {
