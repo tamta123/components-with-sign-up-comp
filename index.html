@@ -12,15 +12,18 @@
   <body>
     <main>
       <div class="infos">
-        <h1>Lorem ipsum</h1>
+        <h1>Learn to code by watching others</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          minima nesciunt quas veritatis esse error nemo earum eius odit, ea
-          dolorum odio ipsum iure labore amet, ducimus officia nobis sint!
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
         </p>
       </div>
       <div class="form-section">
-        <div class="discription">try it 7 days free</div>
+        <div class="discription">
+          <span>Try it free 7 days</span>
+          <span class="not-bold">then $20/mo. thereafter</span>
+        </div>
         <form onsubmit="submitFc(event, this)">
           <div class="input-box">
             <input
@@ -31,10 +34,7 @@
               oninput="removeErrors(0)"
               onblur="setBlueBorder(0,this)"
             />
-            <img
-              src="./error_FILL0_wght400_GRAD0_opsz48.svg"
-              alt="error icon"
-            />
+            <img src="./images/icon-error.svg" alt="error icon" />
           </div>
           <div class="errorbox">
             <p class="error"></p>
@@ -48,10 +48,7 @@
               oninput="removeErrors(1)"
               onblur="setBlueBorder(1,this)"
             />
-            <img
-              src="./error_FILL0_wght400_GRAD0_opsz48.svg"
-              alt="error icon"
-            />
+            <img src="./images/icon-error.svg" alt="error icon" />
           </div>
           <div class="errorbox">
             <p class="error"></p>
@@ -61,24 +58,21 @@
               type="email"
               name="e-mail"
               id="email"
-              placeholder="E-mail Address"
+              placeholder="Email Address"
               oninput="removeErrors(2)"
               onblur="setBlueBorder(2,this)"
             />
-            <img
-              src="./error_FILL0_wght400_GRAD0_opsz48.svg"
-              alt="error icon"
-            />
+            <img src="./images/icon-error.svg" alt="error icon" />
           </div>
           <div class="errorbox">
             <p class="error"></p>
           </div>
-          <div class="input-box">
+          <!-- <div class="input-box">
             <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Password"
+              type="tel"
+              name="telephone"
+              id="telephone"
+              placeholder="Telephone number"
               oninput="removeErrors(3)"
               onblur="setBlueBorder(3,this)"
             />
@@ -89,8 +83,42 @@
           </div>
           <div class="errorbox">
             <p class="error"></p>
+          </div> -->
+          <!-- <div class="input-box">
+            <input
+              type="date"
+              name="dob"
+              id="dob"
+              placeholder="Date of birth"
+              oninput="removeErrors(4)"
+              onblur="setBlueBorder(4,this)"
+            />
+            <img
+              src="./error_FILL0_wght400_GRAD0_opsz48.svg"
+              alt="error icon"
+            />
           </div>
-          <button class="submit-btn">Submit</button>
+          <div class="errorbox">
+            <p class="error"></p>
+          </div> -->
+          <div class="input-box">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              oninput="removeErrors(5)"
+              onblur="setBlueBorder(5,this)"
+            />
+            <img src="./images/icon-error.svg" alt="error icon" />
+          </div>
+          <div class="errorbox">
+            <p class="error"></p>
+          </div>
+          <button class="submit-btn">CLAIM YOUR FREE TRIAL</button>
+          <p class="about-button">
+            By clicking the button, you are agreeing to our Terms and Services
+          </p>
         </form>
       </div>
     </main>
